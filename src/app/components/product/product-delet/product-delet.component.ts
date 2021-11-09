@@ -1,3 +1,4 @@
+import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,9 @@ export class ProductDeletComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  deletProduct(): void{
+
+}
 
 }
