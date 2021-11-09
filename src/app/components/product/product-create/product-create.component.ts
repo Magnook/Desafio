@@ -14,7 +14,7 @@ export class ProductCreateComponent implements OnInit {
 
   product: Product = {
     name: '',
-    price: 129.00,
+    price: 0,
     id: 0
   }
 

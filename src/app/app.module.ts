@@ -21,6 +21,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
 import { MatButtonModule } from '@angular/material/button'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule} from '@angular/common/http';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+
 
 import { FormsModule} from '@angular/forms'
 import { MatFormFieldModule} from '@angular/material/form-field'
@@ -31,7 +33,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'
 import localePt from '@angular/common/locales/pt'
-import { registerLocaleData } from '@angular/common'
+import { registerLocaleData } from '@angular/common';
+import { ProductDeletComponent } from './components/product/product-delet/product-delet.component';
+
 
 registerLocaleData(localePt);
 
@@ -47,7 +51,9 @@ registerLocaleData(localePt);
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductRead2Component
+    ProductRead2Component,
+    ProductUpdateComponent,
+    ProductDeletComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +71,7 @@ registerLocaleData(localePt);
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ],
   providers: [{
     provide: LOCALE_ID,
