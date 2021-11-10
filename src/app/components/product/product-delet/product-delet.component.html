@@ -1,1 +1,18 @@
-<p>delet works!</p>
+<mat-card>
+    <mat-card-title>Confirmar exclusão do Paciente ?</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="product.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha" [value]="product.password" number="password" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deletProduct()" color="warn">
+    Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()" color="primary">
+    Cancelar
+    </button>
+</mat-card>

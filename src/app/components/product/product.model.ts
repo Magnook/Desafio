@@ -1,5 +1,5 @@
 export interface Product{
     id: number
-    name: String
+    name: string
     password: number
 }
