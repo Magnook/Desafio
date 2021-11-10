@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
+  [x: string]: any;
 
   baseUrl = "http://localhost:3001/products"
 
@@ -19,7 +20,7 @@ export class ProductService {
       horizontalPosition: "right",
       verticalPosition: "top"
     })
-  }
+  }  
 
   create(product: Product): Observable<Product>{
     return this.http.post<Product>(this.baseUrl, product)
@@ -29,9 +30,10 @@ export class ProductService {
     return this.http.get<Product[]>(this.baseUrl)
   }
 
-  readById(id: number): Observable<Product>{
+  readById(id: any): Observable<any>{
+    console.log(id)
     const url = `${this.baseUrl}/${id}`
-    return this.http.get<Product>(url)
+    return this.http.get<any>(url)
   }
 
   update(product: Product): Observable<Product>{
@@ -39,10 +41,14 @@ export class ProductService {
     return this.http.put<Product>(url, product)
   }
 
-  delet(id: number): Observable<Product>{
+  delet(id: number): Observable<any>{
+    console.log(id)
     const url = `${this.baseUrl}/${id}`;
-    return this.http.delete<Product>(url)
+    return this.http.delete<any>(url)
   }
+
+ // showStatus(status: string) Observable{
+  //}
 
 
 }

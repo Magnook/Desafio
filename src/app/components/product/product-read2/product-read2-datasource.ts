@@ -8,26 +8,6 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: Product[] = [
-  {id: 1, name: 'Hydrogen', password: 9},
-  {id: 2, name: 'Helium', password: 9},
-  {id: 3, name: 'Lithium', password: 9},
-  {id: 4, name: 'Beryllium', password: 9},
-  {id: 5, name: 'Boron', password: 9},
-  {id: 6, name: 'Carbon', password: 9},
-  {id: 7, name: 'Nitrogen', password: 9},
-  {id: 8, name: 'Oxygen', password: 9},
-  {id: 9, name: 'Fluorine', password: 9},
-  {id: 10, name: 'Neon', password: 9},
-  {id: 11, name: 'Sodium', password: 9},
-  {id: 12, name: 'Magnesium', password: 9},
-  {id: 13, name: 'Aluminum', password: 9},
-  {id: 14, name: 'Silicon', password: 9},
-  {id: 15, name: 'Phosphorus', password: 9},
-  {id: 16, name: 'Sulfur', password: 9},
-  {id: 17, name: 'Chlorine', password: 9},
-  {id: 18, name: 'Argon', password: 9},
-  {id: 19, name: 'Potassium', password: 9},
-  {id: 20, name: 'Calcium', password: 9},
 ];
 
 /**

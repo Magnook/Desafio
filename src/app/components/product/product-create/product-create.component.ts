@@ -15,7 +15,8 @@ export class ProductCreateComponent implements OnInit {
   product: Product = {
     name: '',
     password: 0,
-    id: 0
+    id: 0,
+    status: ''
   }
 
   constructor(private productService: ProductService,
@@ -28,7 +29,7 @@ export class ProductCreateComponent implements OnInit {
 
   createProduct(): void{
   this.productService.create(this.product).subscribe(() =>{
-  this.productService.showMessage('Produto Criado')
+  this.productService.showMessage('Paciente Adicionado')
   this.Router.navigate(['/products'])
   })
     
