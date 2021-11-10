@@ -3,5 +3,13 @@ table {
 }
 
 .edit {
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.delet {
+    margin-right: 5px;
+}
+
+.call {
+    margin-left: 5px;
 }

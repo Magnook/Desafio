@@ -1,8 +1,10 @@
+import {  } from './product.service';
 import { Product } from './product.model';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar'
 import { Observable } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +22,7 @@ export class ProductService {
       horizontalPosition: "right",
       verticalPosition: "top"
     })
-  }  
+  }
 
   create(product: Product): Observable<Product>{
     return this.http.post<Product>(this.baseUrl, product)
@@ -47,8 +49,36 @@ export class ProductService {
     return this.http.delete<any>(url)
   }
 
- // showStatus(status: string) Observable{
-  //}
+  showMsgPopUp(title: string, msg: string, cancelTxt?: string){
+   
+  }
 
+
+
+}
+@Injectable({
+  providedIn: 'root'
+})
+export class DialogOverviewExampleDialogComponent implements OnInit {
+
+  animal: string | undefined;
+  nome: string | undefined;
+  
+  constructor(public Dialog: MatDialog) { }
+
+  openDialog(): void{
+    const dialogRef = this.Dialog.open(DialogOverviewExampleDialogComponent, {
+      width: '250px' ,
+      data: {nome: this.nome, animal:this.animal}
+    });
+    dialogRef.afterClosed ().subscribe((result: string | undefined) => {
+      console .log ('A caixa de diálogo foi fechada' );
+      this.animal = result;
+   });
+  }
+
+
+  ngOnInit(): void {
+  }
 
 }

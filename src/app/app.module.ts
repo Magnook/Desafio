@@ -1,6 +1,5 @@
-import { NgModule,LOCALE_ID } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,12 +31,11 @@ import { ProductRead2Component } from './components/product/product-read2/produc
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'
-import localePt from '@angular/common/locales/pt'
-import { registerLocaleData } from '@angular/common';
 import { ProductDeletComponent } from './components/product/product-delet/product-delet.component';
-
-
-registerLocaleData(localePt);
+import { MatDialogModule } from '@angular/material/dialog';
+import PacienteCallComponent from './components/product/paciente-call/paciente-call.component';
+import { DialogOverviewExampleDialogComponent } from './components/product/dialog-overview-example-dialog/dialog-overview-example-dialog.component';
+import {} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -53,7 +51,9 @@ registerLocaleData(localePt);
     ProductReadComponent,
     ProductRead2Component,
     ProductUpdateComponent,
-    ProductDeletComponent
+    ProductDeletComponent,
+    PacienteCallComponent,
+    DialogOverviewExampleDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +72,8 @@ registerLocaleData(localePt);
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDialogModule,
+    
   ],
   providers: [{
     provide: LOCALE_ID,

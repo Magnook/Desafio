@@ -1,3 +1,5 @@
+import PacienteCallComponent from './../paciente-call/paciente-call.component';
+import { MatDialog } from '@angular/material/dialog';
 import { ProductService } from './../product.service';
 import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
@@ -10,9 +12,9 @@ import { Component, OnInit } from '@angular/core';
 export class ProductReadComponent implements OnInit {
 
   products: Product[] = []
-  displayedColumns = ['id','name','password', 'options', 'status']
+  displayedColumns = ['id','name','password', 'options']
 
-  constructor(private ProductService: ProductService) {
+  constructor(private ProductService: ProductService, public dialog: MatDialog) {
 
   }
 
@@ -22,5 +24,6 @@ export class ProductReadComponent implements OnInit {
     console.log(products)
     })
   }
-
+  
+  
 }

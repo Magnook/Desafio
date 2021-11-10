@@ -16,7 +16,6 @@ export class ProductCreateComponent implements OnInit {
     name: '',
     password: 0,
     id: 0,
-    status: ''
   }
 
   constructor(private productService: ProductService,
