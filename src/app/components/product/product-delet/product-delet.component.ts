@@ -24,11 +24,11 @@ export class ProductDeletComponent implements OnInit {
   deletProduct(): void{
     this.productService.delet(this.product.id).subscribe(()=>{
       this.productService.showMessage('Paciente excluido com sucesso!')
-      this.router.navigate(['/products']);
+      this.router.navigate(['/pacientes']);
     })
 }
   cancel(): void{
-    this.router.navigate(['/products']);
+    this.router.navigate(['/pacientes']);
 }
 
 }

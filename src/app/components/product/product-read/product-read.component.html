@@ -23,17 +23,17 @@
         <ng-container matColumnDef="options">
             <th mat-header-cell *matHeaderCellDef>Opções</th>
             <td mat-cell *matCellDef="let row">
-                <a routerLink="/products/update/{{ row.id }}" class="edit">
+                <a routerLink="/pacientes/update/{{ row.id }}" class="edit">
                     <i class="material-icons">
                         edit
                     </i>
                 </a>
-                <a routerLink="/products/delet/{{ row.id }}" class="delet">
+                <a routerLink="/pacientes/delet/{{ row.id }}" class="delet">
                     <i class="material-icons">
                         delete
                     </i>
                 </a>
-                <a routerLink="/products/call/{{ row.id }}" class="call">
+                <a routerLink="/pacientes/call/{{ row.id }}" class="call">
                     <i class="material-icons">
                         call
                     </i>

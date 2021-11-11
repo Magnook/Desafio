@@ -27,12 +27,12 @@ export class ProductUpdateComponent implements OnInit {
   updateProduct(): void{
     this.productService.update(this.product).subscribe(() =>{
       this.productService.showMessage('Paciente atualizado com sucesso')
-      this.router.navigate(["/products"])
+      this.router.navigate(["/pacientes"])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate(['/pacientes'])
   }
 
 }

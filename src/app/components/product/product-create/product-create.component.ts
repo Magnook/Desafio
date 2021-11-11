@@ -29,14 +29,14 @@ export class ProductCreateComponent implements OnInit {
   createProduct(): void{
   this.productService.create(this.product).subscribe(() =>{
   this.productService.showMessage('Paciente Adicionado')
-  this.Router.navigate(['/products'])
+  this.Router.navigate(['/pacientes'])
   })
     
     
 }
 
   cancel(): void{
-    this.Router.navigate(['/products'])
+    this.Router.navigate(['/pacientes'])
   }
 
 }
