@@ -35,7 +35,8 @@ import { ProductDeletComponent } from './components/product/product-delet/produc
 import { MatDialogModule } from '@angular/material/dialog';
 import PacienteCallComponent from './components/product/paciente-call/paciente-call.component';
 import { DialogOverviewExampleDialogComponent } from './components/product/dialog-overview-example-dialog/dialog-overview-example-dialog.component';
-import {} from '@angular/material';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import {} from '@angular/material';
     ProductUpdateComponent,
     ProductDeletComponent,
     PacienteCallComponent,
-    DialogOverviewExampleDialogComponent
+    DialogOverviewExampleDialogComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -73,7 +75,7 @@ import {} from '@angular/material';
     MatPaginatorModule,
     MatSortModule,
     MatDialogModule,
-    
+    CommonModule,
   ],
   providers: [{
     provide: LOCALE_ID,
