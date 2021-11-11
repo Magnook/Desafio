@@ -1,12 +1,16 @@
-<h1 mat-dialog-title>PAINEL DE CHAMADAS</h1>
-<form>
-    <mat-form-field>
-        <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" disabled>
-    </mat-form-field>
-    <mat-form-field>
-        <input matInput placeholder="Senha" [(ngModel)]="product.password" name="password" disabled>
-    </mat-form-field>
-</form>
-<div mat-dialog-actions>
-    <button mat-button mat-dialog-close routerLink="/products/">Close</button>
+<div class="mat-elevation-z5">
+    <h1 mat-dialog-title class="title">PAINEL DE CHAMADAS</h1>
+    <form>
+        <mat-form-field class="form-name">
+            <input class="name" matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+    </form>
+    <form>
+        <mat-form-field class="form-senha">
+            <input class="senha" matInput placeholder="Senha" [(ngModel)]="product.password" name="password">
+        </mat-form-field>
+    </form>
+    <div mat-dialog-actions>
+    </div>
+    <button class="button-close" mat-raised-button mat-dialog-close routerLink="/products/" color="primary">Close</button>
 </div>

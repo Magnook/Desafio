@@ -1,0 +1,39 @@
+.name {
+    width: 600px;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.form-name {
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+    position: center;
+}
+
+.form-senha {
+    display: block;
+    text-align: center;
+    position: center;
+}
+
+.senha {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.title {
+    padding-top: 20px;
+    font-style: normal;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.button-close {
+    width: 80px;
+    height: 60px;
+}
+
+.mat-elevation-z5 {
+    height: 500px;
+}
